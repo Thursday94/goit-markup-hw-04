@@ -84,6 +84,8 @@ address {
 .header-nav-link.current {
     position: relative;
     color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link.current::after {
@@ -106,8 +108,6 @@ address {
     color: #2e2f42;
     display: block;
     padding: 24px 0;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address {
@@ -266,8 +266,6 @@ address {
     flex-wrap: wrap;
     align-items: center;
     gap: 24px;
-
-    padding: 32px 0
 }
 
 .team-item {
@@ -276,15 +274,13 @@ address {
     border-radius: 0 0 4px 4px;
     text-align: center;
     padding-bottom: 32px;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-
-.team-item-social-container {
-    padding: 32px 0;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-item-name-container {
-    padding-top: 32px;
+    padding: 32px 0;
 }
 
 .team-item-image {
@@ -306,7 +302,6 @@ address {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-item-social {
@@ -314,7 +309,7 @@ address {
     align-items: center;
     justify-content: center;
     gap: 24px;
-    margin-top: 8px;
+    /*margin-top: 8px;*/
 }
 
 .team-item-social-item {
@@ -324,13 +319,13 @@ address {
 
 .team-item-social-link {
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color, #4d5ae5);
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: var(--color, #4d5ae5);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
 }
 
 .team-item-social-link:hover,
@@ -470,6 +465,7 @@ address {
 
 .footer-left {
     margin-right: 120px;
+
 }
 
 .footer-text {
@@ -490,11 +486,11 @@ address {
 
 .footer-social-title {
     font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.02em;
-    color: var(--color, #ffffff);
-    margin-bottom: 16px;
-    line-height: 1.5;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--color, #ffffff);
+        margin-bottom: 16px;
 }
 
 .footer-social-item {
@@ -513,11 +509,14 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: #4d5ae5;
+    /*width: 40px;
+    height: 40px;*/
+    width: 100%;
+    height: 100%;
+    background-color: var(--color, #4d5ae5);
     border-radius: 50%;
-}
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
 .footer-social-icon {
     width: 24px;
