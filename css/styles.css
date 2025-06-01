@@ -437,7 +437,7 @@ address {
     padding: 100px 0;
 }
 
-.footer-wrapper {
+.footer-wrapper-container {
     display: flex;
     align-items: baseline;
 }
@@ -477,7 +477,7 @@ address {
     max-width: 264px;
 }
 
-.footer-social {
+.footer-social-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
