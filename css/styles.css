@@ -436,7 +436,7 @@ address {
     padding: 100px 0;
 }
 
-.footer-wrapper {
+.footer .container {
     display: flex;
     align-items: baseline;
 }
